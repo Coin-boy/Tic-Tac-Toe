@@ -1,0 +1,102 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+    
+}
+
+.player_turn{
+    font-family:monospace;
+    font-size:3rem;
+    font-weight:bold;
+    margin:auto;
+    color:green;
+    position:absolute;
+    right:19em;
+    top:3rem;
+
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:grey;
+    width:330px;
+    height:330px;
+    margin:11rem auto 4rem;
+
+}
+
+.box_container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:0.1rem;
+    margin:11rem auto;
+    padding:0.5rem 0.5rem ;
+    width:320px;
+    height:320px;
+    background-color:white;
+    box-sizing:border-box;
+}
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100px;
+    height:100px;
+    color:yellow;
+    font-size:5rem;
+    font-family:'courier';
+    font-weight:bold;
+    background-color:blue;
+    cursor:pointer;
+}
+
+.game_over{
+    color:white;
+    font-weight: bold;
+    font-size:4rem;
+
+}
+
+.hidden {
+    display:none
+}
+.reset {
+    width:100px;
+    background-color:transparent;
+    margin:auto;
+}
+.reset button{
+    font-size:2rem;
+    margin:1rem;
+    font-family:monospace;
+    font-weight: bold;
+    padding:0.7rem 1.5rem;
+    border-radius: 1.5rem;
+    border:none;
+    color:white;
+    background-color: blue;
+}
+
+@media screen and (max-width:500px) {
+    .player_turn{
+        right:5em;
+
+    }
+    
+}
+
